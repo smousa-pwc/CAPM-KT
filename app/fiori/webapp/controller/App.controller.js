@@ -14,7 +14,7 @@ sap.ui.define([
         let file;
         let aData;
         let oModel;
-        let khara;
+    
 
         return Controller.extend("fiori.controller.App", {
             onInit: function () {

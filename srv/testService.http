@@ -5,7 +5,7 @@ GET http://localhost:4004/odata/v4/sap/opu/odata/sap/API_SALES_ORDER/OrderSet
 POST http://localhost:4004/odata/v4/sap/opu/odata/sap/API_SALES_ORDER/OrderSet 
 Content-Type: application/json 
 
-{ "salesDocument": "10000245",
+{ "salesDocument": "10000390",
    "NetValue": 360000,
    "Currency": "EGP",
    "Customer": "1000075"
