@@ -14,11 +14,20 @@ sap.ui.define([
         let file;
         let aData;
         let oModel;
+        let _that;
     
 
         return Controller.extend("fiori.controller.App", {
             onInit: function () {
-
+                _that = this
+            },
+            onItemPress: function (e) {
+                console.log(e)
+                var orderId = e.getSource().getBindingContext().getObject().salesDocument
+                var oRouter = _that.getOwnerComponent().getRouter()
+                oRouter.navTo("DetailsApp", {
+                    orderID: orderId
+                })
             },
             onFileChange: function (oEvent) {
                 file = oEvent.getParameters("files").files[0];
@@ -64,9 +73,11 @@ sap.ui.define([
                             new sap.m.Text({ text: "{NetValue}" }),
                             new sap.m.Text({ text: "{Currency}" }),
                             new sap.m.Text({ text: "{Customer}" })
-                        ]
+                        ],
+                        type: "Navigation",
+                        press: this.onItemPress
                     })
-                });
+                }, this);
                 var aFilters = [
                     new Filter("salesDocument", FilterOperator.EQ, "337"),
                 ];

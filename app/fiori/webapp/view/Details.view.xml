@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="fiori.controller.Details"
+    displayBlock="true"
+    xmlns:u="sap.ui.unified"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:ux = "sap.uxap" 
+    xmlns:m="sap.m"
+    class="viewPadding"
+    id="Details"
+>
+<ux:ObjectPageLayout id="_IDGenObjectPageLayout1" showTitleInHeaderContent="true" >
+<ux:headerContent>
+<m:VBox id="_IDGenVBox1" class="sapUiSmallMarginBottom">
+                        <m:Title id="_IDGenTitle1" class="sapUiTinyMarginBottom">
+                            <m:Link id="_IDGenLink1" text="Order Details"/>
+                        </m:Title>
+
+                        <m:HBox id="_IDGenHBox1" class="sapUiTinyMarginBottom" renderType="Bare">
+                            <m:Label id="_IDGenLabel1" text="Manufacturer:" class="sapUiTinyMarginEnd"/>
+                            <m:Text id="_IDGenText1" text=" Robotech"/>
+                        </m:HBox>
+
+                        <m:HBox id="_IDGenHBox2" class="sapUiTinyMarginBottom" renderType="Bare">
+                            <m:Label id="_IDGenLabel2" text="Factory:" class="sapUiTinyMarginEnd"/>
+                            <m:Text id="_IDGenText2" text=" Florida, OL"/>
+                        </m:HBox>
+
+                        
+                    </m:VBox>
+
+
+
+</ux:headerContent>
+
+
+</ux:ObjectPageLayout>
+
+</mvc:View>

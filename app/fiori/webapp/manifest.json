@@ -102,6 +102,13 @@
           "target": [
             "TargetApp"
           ]
+        },
+        {
+          "name": "DetailsApp",
+          "pattern": "OrderSet/{orderID}",
+          "target": [
+            "TargetDetails"
+          ]
         }
       ],
       "targets": {
@@ -111,7 +118,15 @@
           "clearControlAggregation": false,
           "viewId": "App",
           "viewName": "App"
-        }
+        },
+        
+          "TargetDetails": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "Details",
+            "viewName": "Details"
+          }
       }
     },
     "rootView": {

@@ -75,7 +75,7 @@
             </columns>
             
             <items>
-                <ColumnListItem id="_IDGenColumnListItem1">
+                <ColumnListItem id="_IDGenColumnListItem1" type="Navigation" press=".onItemPress">
                     <cells>
                         <Text id="_IDGenText3" text="{salesDocument}"/>
                         <Text id="_IDGenText4" text="{NetValue}"/>
